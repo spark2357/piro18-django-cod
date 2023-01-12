@@ -13,6 +13,7 @@
 <br />
 
 <hr />
+<button><a href="/posts/{{post.id}}/update" style="text-decoration: none">수정하기</a></button>
 <form action="/posts/{{ post.id }}/delete" method="post">
     {% csrf_token %}
     <input type="submit" value="삭제하기" />
